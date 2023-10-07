@@ -34,8 +34,7 @@ app.use(errorController.get404);
 
 mongoose
   .connect(
-    'mongodb+srv://revanth:fEChn28xpRPQZf5m@cluster0.ybysmcy.mongodb.net/shop?retryWrites=true&w=majority&appName=AtlasApp',
-    { useNewUrlParser: true }
+    'mongodb+srv://revanth:fEChn28xpRPQZf5m@cluster0.ybysmcy.mongodb.net/shop?retryWrites=true&w=majority&appName=AtlasApp'
   )
   .then(result => {
     User.findOne().then(user => {
